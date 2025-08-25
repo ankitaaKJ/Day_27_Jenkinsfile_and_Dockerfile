@@ -9,7 +9,7 @@ pipeline{
 
         stage('Run Container'){
             steps{
-                sh 'docker run -p 1000:1000 sample-httpd-img:latest'
+                sh 'docker run -dp 1000:1000 sample-httpd-img:latest'
             }
         }
 
